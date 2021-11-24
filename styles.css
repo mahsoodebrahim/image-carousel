@@ -1,5 +1,4 @@
 .img-carousel {
-  border: 3px solid red;
   height: 80vh;
   display: flex;
 }
@@ -14,21 +13,33 @@
 
 .img-container {
   flex: 3;
-  border: 3px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.active img {
+  border: 3px solid #595758;
+  border-radius: 10px;
+}
+
 .arrow {
   font-size: 2rem;
   flex: 1;
-  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 [class*="fa-arrow"] {
-  color: rgb(215, 145, 55);
+  color: #595758;
+}
+
+[class*="fa-arrow"]:hover {
+  color: #7161ef;
+}
+
+[class*="fa-arrow"]:active {
+  color: #b79ced;
+  transform: translateY(2px);
 }
