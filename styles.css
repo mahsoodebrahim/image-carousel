@@ -1,3 +1,7 @@
+body {
+  background-color: #efd9ce;
+}
+
 .img-carousel {
   height: 80vh;
   display: flex;
@@ -7,7 +11,7 @@
   display: none;
 }
 
-.active {
+.active-img {
   display: block;
 }
 
@@ -18,13 +22,13 @@
   align-items: center;
 }
 
-.active img {
+.active-img img {
   border: 3px solid #595758;
   border-radius: 10px;
 }
 
 .arrow {
-  font-size: 2rem;
+  font-size: 3rem;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -42,4 +46,22 @@
 [class*="fa-arrow"]:active {
   color: #b79ced;
   transform: translateY(2px);
+}
+
+#navigation-dots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #595758;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot {
+  background-color: #b79ced;
 }
